@@ -9,6 +9,9 @@ Buy, Sell, Withdraw etc.  The general use of this is to do get_res(page, args)
 An example of this is found in trade.py
 
 In the initial upload of this code it is commented out
+
+Make sure you modify the public and private keys
+
 '''
 
 import json
@@ -47,8 +50,9 @@ class request:
         
 def get_res(page, args):
     result = request(
-        '<Your-API-Key-Here>',
-        '<Your-Secret-Here>'
+        'bdb9ae05-3898-4405-b405-ea20ad169d86',
+        'uJZ7lNwB5tMKyXYah4RPKZXnDkQk5C/twXB/+8KWOm+zVi/kOe0ibdjhNHZFkKSANCAZA1AlzhFo5kSx+wbWeQ=='
         )
     data = result.perform(page, args)
     return data
+
